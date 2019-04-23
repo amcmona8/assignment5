@@ -11,14 +11,16 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    flex-direction: row @media */
-        /*    background-image: linear-gradient(rgba(0, 0, 0, .2) rgba(0, 0, 0, .9)), url(http://cdn.shopify.com/s/files/1/0862/8040/products/MH1576_800x.jpg?v=1516250965);*/
+    flex-direction: row;
+
 }
 
 #div box {
 
-    box-sizing: border-box; margin: 0; color: darkmagenta;
-        
+    box-sizing: border-box;
+    margin: 0;
+    color: darkmagenta;
+
 }
 
 
@@ -37,33 +39,38 @@ header {
     display: flex;
     align-items: center
 }
-}
+
 
 header {}
 
-.containter__item 
+.containter__item {
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px darkmagenta;
 
-        {
-        border: 2px solid #ff0000;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px darkmagenta;
+    background-color: darkseagreen;
+    opacity: .2;
+    box-sizing: border-box;
+}
 
-        background-color: darkseagreen;
-        opacity: .2;
-        box-sizing: border-box;
+a:hover {
+    color: darkgray
+}
 
-
-
-        @media screen and (max-width: 30rem) {
-
-            header,
-            main,
-            footer {
-                flex-direction: column;
-            }
-
+a {
+    transition: background-color .3s, color .3s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 
+@media screen and (max-width: 30rem) {
+
+    header,
+    main,
+    footer {
+        flex-direction: column;
+    }
 
 
-        }
+}
